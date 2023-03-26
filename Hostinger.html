@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostinger</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #673de6;
+            overflow: hidden;
+        }
+        /* ul:hover {
+            box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.2);
+            position: relative;
+            top: 20px;
+            transition: 5ms;
+        }*/
+        li {
+            float: left;
+        }
+        li a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: larger;
+            font-weight: bold;
+            padding: 22px 25px;
+            display: block;
+        }
+        li a button {
+            background-color:#673de6;
+            border: 1px solid white;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 9px 32px;
+            font-size: 17px;
+        }
+        .para1 {
+            background-color: #673de6;
+            height: 450px;
+        }
+        .section1 {
+            width: 50%;
+            float: left;
+            margin-left: 180px;
+            
+        }
+        .section1 #a1 {
+            font-size: 45px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .section1 #a2 {
+            font-size: 19px;
+            color: #ffffff;
+        }
+        .section1 #a3 {
+            background-color: #fc5185;
+            border-radius: 25px;
+            border: none;
+            font-size: larger;
+            padding: 13px 80px;
+            color: #ffffff;
+        }
+        .section1 #a4 {
+            color: #ffffff;
+        }
+        .para2 {
+            padding: 10px;
+        }
+        .para2 #line {
+            padding: 50px;
+            text-align: center;
+        }
+        .para2 #line span {
+            padding: 100px 40px;
+            color: grey;
+            font-size: 25px;
+        }
+        #line1 {
+            text-align: center;
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: rgb(3, 3, 68);
+        }
+        #line2 {
+            text-align: center;
+            color:#37207e;
+        }
+        .para3 {
+            display: flex;
+            /*flex-wrap: nowrap;*/
+        }
+        #boxitem1 {
+            width: 20%;
+            height: 110px;
+            border: none;
+            margin-left: 60px;
+            text-align: center;
+        }
+        #boxitem2 {
+            width: 26.66%;
+            border: none;
+            
+            padding: 10px 15px;
+        }
+        #boxitem3 {
+            width: 26.66%;
+            border: none;
+            
+            padding: 10px 15px;
+        }
+        #boxitem4 {
+            width: 26.66%;
+            border: none;
+           
+            padding: 10px 15px;
+        }
+        .item {
+            color: rgb(12, 87, 12);
+            font-weight: bold;
+        }
+        .para4 {
+            text-align: center;
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: rgb(3, 3, 120);
+            margin: 80px 98px;
+        }
+        .para5 {
+            display: flex;
+        }
+        #box1 {
+            width: 284px;
+            height: 920px;
+            border: none;
+            margin: 20px 30px;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #2f1c6a;
+            font-family: sans-serif;
+            box-shadow:0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+        }
+        #box1:hover {
+            box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+            position: relative;
+            top: -20px;
+            transition: 5ms;
+        }
+        #aa {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #bb{
+            text-align: center;
+        }
+        #cc {
+            color: grey;
+            text-align: center;
+        }
+        #cc button {
+            text-align: center;
+            margin-left: 6px;
+            background-color: #8c85ff;
+            border-radius: 19px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            padding: 11px;
+        }
+        #dd {
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #ee {
+            text-align: center;
+        }
+        #ee button {
+            background-color: #673DE6;
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+            padding: 15px 80px;
+            font-size: 17px;
+        }  
+        #ee button:hover {
+            background-color: #37207e;
+            cursor: pointer;
+        }
+        #ff {
+            color: grey;
+            text-align: center;
+        } 
+        .a1 {
+            color: #2f1c6a;
+            font-size: 15px;
+        } 
+        #aa1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+            color: #673DE6;
+        }
+
+        #box2 {
+            width: 284px;
+            height: 920px;
+            border: none;
+            margin: 20px 30px;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #2f1c6a;
+            font-family: sans-serif;
+            box-shadow:0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+        }
+        #box2:hover {
+            box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+            position: relative;
+            top: -20px;
+            transition: 5ms;
+        }
+        #aa {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #bb{
+            text-align: center;
+        }
+        #cc {
+            color: grey;
+            text-align: center;
+        }
+        #cc button {
+            text-align: center;
+            margin-left: 6px;
+            background-color: #8c85ff;
+            border-radius: 19px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            padding: 11px;
+        }
+        #dd {
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .newone {
+            color: #fc5185;
+        }
+        #ee {
+            text-align: center;
+        }
+        #ee button {
+            background-color: #fc5185;
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+            padding: 15px 80px;
+            font-size: 17px;
+        }  
+        #ee button .newone {color: #fc5185;}
+        #ee button:hover {
+            background-color: #ff2b6b;
+            cursor: pointer;
+        }
+        #ff {
+            color: grey;
+            text-align: center;
+        } 
+        .a1 {
+            color: #2f1c6a;
+            font-size: 15px;
+        } 
+        #aa1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+            color: #673DE6;
+        }
+        
+        #box3 {
+            width: 284px;
+            height: 920px;
+            border: none;
+            margin: 20px 30px;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #2f1c6a;
+            font-family: sans-serif;
+            box-shadow:0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+        }
+        #box3:hover {
+            box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+            position: relative;
+            top: -20px;
+            transition: 5ms;
+        }
+        #aa {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #bb{
+            text-align: center;
+        }
+        #cc {
+            color: grey;
+            text-align: center;
+        }
+        #cc button {
+            text-align: center;
+            margin-left: 6px;
+            background-color: #8c85ff;
+            border-radius: 19px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            padding: 11px;
+        }
+        #dd {
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #ee {
+            text-align: center;
+        }
+        #ee button {
+            background-color: #673DE6;
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+            padding: 15px 80px;
+            font-size: 17px;
+        }  
+        #ee button:hover {
+            background-color: #37207e;
+            cursor: pointer;
+        }
+        #ff {
+            color: grey;
+            text-align: center;
+        } 
+        .a1 {
+            color: #2f1c6a;
+            font-size: 15px;
+        } 
+        #aa1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+            color: #673DE6;
+        }
+
+        #box4 {
+            width: 284px;
+            height: 920px;
+            border: none;
+            margin: 20px 30px;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #2f1c6a;
+            font-family: sans-serif;
+            box-shadow:0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+        }
+        #box4:hover {
+            box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+            position: relative;
+            top: -20px;
+            transition: 5ms;
+        }
+        #aa {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #bb{
+            text-align: center;
+        }
+        #cc {
+            color: grey;
+            text-align: center;
+        }
+        #cc button {
+            text-align: center;
+            margin-left: 6px;
+            background-color: #8c85ff;
+            border-radius: 19px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            padding: 11px;
+        }
+        #dd {
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #ee {
+            text-align: center;
+        }
+        #ee button {
+            background-color: #673DE6;
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+            padding: 15px 80px;
+            font-size: 17px;
+        }  
+        #ee button:hover {
+            background-color: #37207e;
+            cursor: pointer;
+        }
+        #ff {
+            color: grey;
+            text-align: center;
+        } 
+        .a1 {
+            color: #2f1c6a;
+            font-size: 15px;
+        } 
+        #aa1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+            color: #673DE6;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">HOSTINGER</a></li>
+        <li><a href="#">English</a></li>
+        <li style="float: right"><a href="#">Cart</a></li>
+        <li style="float: right"><a href="#"><button>Log in</button></a></li>
+        <li style="float: right"><a href="#">Domain</a></li>
+        <li style="float: right"><a href="#">Email</a></li>
+        <li style="float: right"><a href="#">VPS</a></li>
+        <li style="float: right"><a href="#">Hosting</a></li>
+    </ul>
+    <div class="para1">
+        <div class="section1">
+            <h2 id="a1">Make Your Website <br> Speedier With <br> WordPress Hosting</h2>
+            <p id="a2">If you want to increase conversion rates and traffic, check out <br> our reliable hosting solution. We guarantee 99.9% uptime, best <br> -in-industry security, and speed optimization features.</p>
+            <button id="a3">Start now</button>
+            <p id="a4">Benefit from an exclusive 30-day money-back guarantee</p>
+        </div>
+        <div class="section2">
+            <img src="	https://assets.hostinger.com/images/wordpress-hosting-2022/header-img-ed3a3cc7ac.png" height="350px" width="400px" style="float: left">
+        </div>
+    </div>
+
+    <!-- para 2 -->
+    <div class="para2">
+        <div id="line">
+            <span>WordPress</span>
+            <span>LITESPEED</span>
+            <span>CLOUDFLARE</span>
+        </div>
+        <h2 id="line1">Join Numerous Website Owner</h2>
+        <p id="line2">We’re pleased to be a top-rated web hosting provider on Trustpilot. See what our clients have to say about our services.</p>
+    </div>
+    <div class="para3">
+        <div id="boxitem1">
+            <h2  class="item">Excellent</h2>
+            <p>Top rating of our website from the different users.</p>
+        </div>
+        <div id="boxitem2">
+            <h2 class="item">Five Stars Rating</h2>
+            <p><strong>Host it and they will come</strong></p>
+            <p>Aside from my regular profession,<br> I enjoy buying and selling domain <br>name. Same of ....</p>
+        </div>
+        <div id="boxitem3">
+            <h2 class="item">Five Stars Rating</h2>
+            <p><strong>VPS easy setup, and you can upgra..</strong></p>
+            <p>I was looking for a vps for a text piolet <br> project knowing that it could require...</p>
+        </div>
+        <div id="boxitem4">
+            <h2 class="item">Five Stars Rating</h2>
+            <p><strong>Best hosting only on hostinger</strong></p>
+            <p>Best hosting best support best services. <br> Very affordable price trustable plateform...</p>
+        </div>
+    </div>
+
+    <!-- para 3-->
+    <div class="para4">Choose the Best WordPress Hosting in India</div>
+
+    <div class="para5">
+        <div id="box1">
+            <p id="aa">Single WordPress</p>
+            <p id="bb">Ideal solution for beginners</p>
+            <p id="cc"> <del>&#8377; 329.00</del> <button>SAVE 79%</button> </p>
+            <p id="dd"> <sup>&#8377;</sup>69.00 <sub>/mo</sub> </p>
+            <p id="ee"><button>Add to cart</button></p>
+            <p id="ff">₹159.00/mo when you renew</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>50 GB</strong> SSD Storage</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>~10 000 </strong>Visits Monthly help_outline</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Website</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Email Account</p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Unlimited</strong> Free SSL </p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Free</strong> Domain</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>100 GB</strong> Bandwidth</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Managed</strong> WordPress </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Acceleration </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> WordPress Multisite</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WP-CLI</strong></p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>30 Days</strong> Money Back Guarantee</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>2</strong> Databases</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Staging Tool  </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Multiple</strong> Data Centers </p>
+            <hr>
+            <p class="a1" id="aa1">See all features</p>
+        </div>
+        <div id="box2">
+            <p id="aa">WordPress Starter</p>
+            <p id="bb">Perfect package for personal websites</p>
+            <p id="cc"> <del>&#8377; 519.00</del> <button>SAVE 75%</button> </p>
+            <p id="dd" class="newone"> <sup>&#8377;</sup>129.00 <sub>/mo</sub> </p>
+            <p id="ee"><button class="newone">Add to cart</button></p>
+            <p id="ff">₹159.00/mo when you renew</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>50 GB</strong> SSD Storage</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>~10 000 </strong>Visits Monthly help_outline</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Website</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Email Account</p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Unlimited</strong> Free SSL </p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Free</strong> Domain</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>100 GB</strong> Bandwidth</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Managed</strong> WordPress </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Acceleration </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> WordPress Multisite</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WP-CLI</strong></p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>30 Days</strong> Money Back Guarantee</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>2</strong> Databases</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Staging Tool  </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Multiple</strong> Data Centers </p>
+            <hr>
+            <p class="a1" id="aa1">See all features</p>
+        </div>
+        <div id="box3">
+            <p id="aa">Business WordPress</p>
+            <p id="bb">Optimized for small businesses</p>
+            <p id="cc"> <del>&#8377; 649.00</del> <button>SAVE 62%</button> </p>
+            <p id="dd"> <sup>&#8377;</sup>249.00 <sub>/mo</sub> </p>
+            <p id="ee"><button>Add to cart</button></p>
+            <p id="ff">₹159.00/mo when you renew</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>50 GB</strong> SSD Storage</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>~10 000 </strong>Visits Monthly help_outline</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Website</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Email Account</p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Unlimited</strong> Free SSL </p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Free</strong> Domain</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>100 GB</strong> Bandwidth</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Managed</strong> WordPress </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Acceleration </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> WordPress Multisite</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WP-CLI</strong></p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>30 Days</strong> Money Back Guarantee</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>2</strong> Databases</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Staging Tool  </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Multiple</strong> Data Centers </p>
+            <hr>
+            <p class="a1" id="aa1">See all features</p>
+        </div>
+        <div id="box4">
+            <p id="aa">WordPress Pro</p>
+            <p id="bb">Optimized for small and medium businesses</p>
+            <p id="cc"> <del>&#8377; 1.999.00</del> <button>SAVE 55%</button> </p>
+            <p id="dd"> <sup>&#8377;</sup>69.00 <sub>/mo</sub> </p>
+            <p id="ee"><button>Add to cart</button></p>
+            <p id="ff">₹159.00/mo when you renew</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>50 GB</strong> SSD Storage</p>
+            <p class="a1"><b>>></b> &nbsp; <strong>~10 000 </strong>Visits Monthly help_outline</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Website</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>1</strong> Email Account</p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Unlimited</strong> Free SSL </p></li>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Free</strong> Domain</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>100 GB</strong> Bandwidth</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Managed</strong> WordPress </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Acceleration </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> WordPress Multisite</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WP-CLI</strong></p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>30 Days</strong> Money Back Guarantee</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>2</strong> Databases</p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>WordPress</strong> Staging Tool  </p>
+            <p class="a1"> <b>>></b> &nbsp; <strong>Multiple</strong> Data Centers </p>
+            <hr>
+            <p class="a1" id="aa1">See all features</p>
+        </div>
+    </div>
+    <br>
+
+    <!--<div></div>
+        <a href="#" style="text-align: center; color: #2f1c6a; padding: 150px;">Payment Term</a>
+    </div>-->
+</body>
+</html>
